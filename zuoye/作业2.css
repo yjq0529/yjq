@@ -1,0 +1,26 @@
+.id1{
+	width: 500px;
+	height: 300px;
+	background-color: darkgray ;
+		position: absolute;
+	left: 500px;
+	top: 250px;
+	
+}
+
+.id2{
+	width: 50px;
+	height: 50px;
+	background-color: yellow;
+	border-bottom-right-radius:5em; 
+
+}
+.id3{
+	width: 50px;
+	height: 50px;
+	background-color: yellow;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border-top-left-radius:5em;
+}

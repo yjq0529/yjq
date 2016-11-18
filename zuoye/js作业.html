@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+   <!--  <link rel="stylesheet" href="css/check.css"> -->
+</head>
+<body>
+<p>名称:</p>
+<input type="text">
+<p id="pid">必填，长度为4-16个字符</p>
+<button onclick="demo()">验证</button>
+<script>
+    function demo(){
+    var a=document.getElementsByTagName("input")[0];
+    var b=document.getElementById("pid");
+        console.log(a.value);
+        console.log(b);
+        if(a.value.length==0){
+            b.innerHTML = "姓名不能为空";
+            document.getElementById("pid").style.color = "red";
+        }
+        else if(a.value.length<=16&& a.value.length>=4)
+        {
+            b.innerHTML = "格式正确";
+            document.getElementById("pid").style.color = "green";
+        }
+        else if(0<a.value.length<4|| a.value.length>16){
+        b.innerHTML = "长度为4-16个字符";
+        document.getElementById("pid").style.color = "red";
+        }
+    }
+</script>
+</body>
+</html>
